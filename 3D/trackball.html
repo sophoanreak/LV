@@ -1,0 +1,44 @@
+<html>
+	<body>
+		<script src='three.min.js'></script>
+		<script src='TrackballControl.js'></script>
+		
+		<script>
+			var camera, controls, scene, renderer;
+			init();
+			animate();
+			
+			function init(){
+				camera = new THREE.PerspectiveCamera(45, 400/400, 1,1000);
+				camera.position.z = 500;
+				controls = new THREE.TrackballControls(camera);
+				controls.addEventListener('change',render);
+				
+				scene = new THREE.Scene();
+				
+				var geometry = new THREE.BoxGeometry(100,100,100);
+				var material = new THREE.MeshNormalMaterial();
+				
+				var mesh = new THREE.Mesh(geometry,material);
+				scene.add(mesh);
+				
+				renderer = new THREE.WebGLRenderer();
+				renderer.setSize(400,400);
+				document.body.appendChild(renderer.domElement);
+			}
+			
+			function animate(){
+				requestAnimationFrame( animate );
+				controls.update();
+			}
+			
+			function render(){
+				renderer.render( scene, camera );
+			}
+		
+		</script>
+		
+	</body>
+	
+<!--http://filmsbykris.com/scripts/html5/threejs/TrackballControls.js-->
+</html>

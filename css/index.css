@@ -1,0 +1,58 @@
+
+	table {
+		border-collapse:collapse;
+	}
+	
+	a { color: inherit;
+		text-decoration: none;
+	} 
+	
+	a:hover{
+		font-size:1em;
+		color: black;
+		text-decoration: underline;
+	}
+		
+	.menu > li {
+	font-weight:bold;
+	font-size:1.2em;
+	}
+	
+	spamr {
+	color : red;
+	}
+	spamb{
+	color: blue;
+	}
+	spamg{
+	color: green;
+	}
+	
+	.abovecharacter{
+		font-size:0.6em;
+		position:absolute;
+		display:inline-block;
+		margin-top:-8px;
+		margin-right:5px;
+	}
+	.belowcharacter{
+		font-size:0.6em;
+		position:absolute;
+		display:inline-block;
+		margin-top:11px;
+		
+	}
+	.belowcharacter1{
+		font-size:0.6em;
+		position:absolute;
+		display:inline-block;
+		margin-top:16px;
+		
+	}
+	.radical{
+		font-size:0.6em;
+		position:absolute;
+		display:inline-block;
+		margin-top:-5px;
+	}
+

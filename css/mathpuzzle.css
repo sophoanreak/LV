@@ -1,0 +1,48 @@
+.homebuttong{
+	float:left;
+	font-size:2em;
+	height:140px;
+	width:95%;
+	min-width:140px;
+	text-align: left;
+	margin-top:2px;
+	margin-bottom:2px;
+	margin-right:1px;
+	padding:5px;
+	padding-top:0%;
+	vertical-align: middle;
+	background-color: #e38d27;
+	color: white; tom: 4px;
+	background-position:bottom left;
+	background-image:url('../buttons/button_bg.png');
+	border-radius:2px;
+}
+.homebuttonlg{
+	float:left;
+	font-size:2em;
+	height:140px;
+	width:95%;
+	min-width:140px;
+	text-align: left;
+	margin-top:2px;
+	margin-bottom:2px;
+	margin-right:1px;
+	padding:5px;
+	padding-top:0%;
+	background-color: #EAF2D3;
+	color: gray; tom: 4px;
+	background-position:bottom left;
+	background-image:url('../buttons/button_bg.png');
+	border-radius:2px;
+}
+
+.homebuttong:hover {
+		color: black;
+		box-shadow: 3px 3px 5px rgba(0,1,1,0.75);
+		border: 1px solid black;
+	}
+.homebuttonlg:hover {
+		color: black;
+		box-shadow: 3px 3px 5px rgba(0,1,1,0.75);
+		border: 1px solid black;
+}
